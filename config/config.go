@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	utils "github.com/atolye/cursorgotemplate/core"
+	utils "github.com/ismailozdel/core"
 	"github.com/joho/godotenv"
 )
 

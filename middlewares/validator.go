@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/atolye/cursorgotemplate/core/httputils"
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
+	"github.com/ismailozdel/core/httputils"
 )
 
 type XValidator struct {

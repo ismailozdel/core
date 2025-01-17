@@ -9,8 +9,7 @@ import (
 
 	_ "github.com/lib/pq"
 
-	"github.com/atolye/cursorgotemplate/api/models"
-	"github.com/atolye/cursorgotemplate/core/config"
+	"github.com/ismailozdel/core/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -116,13 +115,13 @@ func ConnectCompanyDB(companyID string) error {
 	return nil
 }
 
-func AutoMigrate() error {
+func AutoMigrate(models ...interface{}) error {
 	if DB == nil {
 		return &DBError{Message: ErrorConnectDB}
 	}
 
 	// Model yapılarını buraya ekleyin
-	if err := DB.AutoMigrate(models.Item{}); err != nil {
+	if err := DB.AutoMigrate(models); err != nil {
 		return &DBError{Message: ErrorAutoMigrate, Err: err}
 	}
 	return nil

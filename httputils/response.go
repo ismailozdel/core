@@ -1,8 +1,8 @@
 package httputils
 
 import (
-	"github.com/atolye/cursorgotemplate/core/config"
 	"github.com/gofiber/fiber/v2"
+	"github.com/ismailozdel/core/config"
 )
 
 type packageEnums struct {

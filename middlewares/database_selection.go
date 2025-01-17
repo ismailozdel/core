@@ -1,8 +1,8 @@
 package middlewares
 
 import (
-	"github.com/atolye/cursorgotemplate/core/database"
 	"github.com/gofiber/fiber/v2"
+	"github.com/ismailozdel/core/database"
 )
 
 func databaseSelect(c *fiber.Ctx) error {

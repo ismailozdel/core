@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	utils "github.com/atolye/cursorgotemplate/core"
 	"github.com/gofiber/fiber/v2"
+	utils "github.com/ismailozdel/core"
 )
 
 /*
